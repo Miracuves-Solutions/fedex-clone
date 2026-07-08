@@ -1,70 +1,40 @@
-# 🚚 FedEx Clone — White-Label Parcel Courier Platform by Miracuves
+# Fedex Clone — White-Label Solution by Miracuves
 
-<div align="center">
-
-**Launch your own courier and parcel delivery platform in 6 days - tracking, dispatch, warehouse sync, fully branded.**
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-View_Now-crimson?style=for-the-badge)](https://miracuves.com/fedex-clone/)
-[![Get Quote](https://img.shields.io/badge/Get_Quote-Free_Consultation-black?style=for-the-badge)](https://miracuves.com/contact/)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat_Now-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/919830009649)
-
-</div>
-
-<div align="center">
-<a href="https://miracuves.com/fedex-clone/">
-<img src="https://berqwp-cdn.sfo3.cdn.digitaloceanspaces.com/cache/miracuves.com/wp-content/uploads/2023/09/AdobeStock_138067977-jpg.webp?bwp" alt="FedEx Clone - Screenshot" width="800" style="border-radius:8px;max-width:100%;height:auto" />
-</a>
-</div>
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxedex.mimeld.com)
+[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/fedex-clone/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/fedex-clone/#pricing)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
 ---
 
 ## Table of Contents
 
-- [What Is a FedEx Clone?](#what-is)
-- [Why Choose Miracuves](#why-choose)
-- [Who Is This For](#who-for)
-- [How It Works](#how-it-works)
-- [Core Features](#features)
-- [All Modules](#modules)
-- [Tech Stack](#tech-stack)
-- [Revenue Streams](#revenue)
-- [Pricing](#pricing)
-- [Deployment Timeline](#timeline)
-- [Build vs Buy](#build-vs-buy)
-- [Market Opportunity](#market)
-- [FAQ](#faq)
-- [Related Solutions](#related)
+1. [Who Is This For?](#who-is-this-for)
+2. [How It Works](#how-it-works)
+3. [Core Features](#core-features)
+4. [Architecture](#architecture)
+5. [Revenue Streams](#revenue-streams)
+6. [What's Included](#whats-included)
+7. [Deployment Timeline](#deployment-timeline)
+8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
+9. [Market Opportunity](#market-opportunity)
+10. [Client Testimonials](#client-testimonials)
+11. [FAQ](#faq)
+12. [Resources](#resources)
+13. [About Miracuves](#about-miracuves)
 
----
+## Live Demos
 
-## 🚚 What Is a FedEx Clone?
+| Environment | URL | What you can test |
+|---|---|---|
+| Web Platform | [mxedex.mimeld.com](https://mxedex.mimeld.com) | Full experience in the browser |
+| Admin Dashboard | [Solution page → Demo](https://miracuves.com/fedex-clone/#demo) | Users, content, plans, analytics |
 
-A **FedEx Clone** is a ready-to-deploy, white-label parcel courier platform that replicates the core functionality of FedEx - parcel tracking, courier dispatch, shipping labels, warehouse sync, and route optimization - customized entirely under your own brand.
+Demo credentials: [miracuves.com/fedex-clone -> Demo section](https://miracuves.com/fedex-clone/#demo)
 
-Every functional component is built, tested, and deployable from day one.
+## What Makes This Fedex Clone Different
 
-Instead of spending 6-12 months and $80,000+ building from scratch, Miracuves delivers a fully functional, scalable platform in **6 days**, starting at **$2,899**, with complete source code ownership.
-
-The global courier and parcel delivery market is projected to reach **$750 billion by 2030**. Whether you are launching a local courier service or building a national logistics brand - this solution is your fastest path to market.
-
----
-
-## Why Choose Miracuves for Your FedEx Clone?
-
-Choosing the right technology partner determines whether your launch succeeds or stalls. Here is what sets Miracuves apart:
-
-- **6-day delivery guarantee**
-- **Real-time tracking** - end-to-end parcel visibility
-- **Courier dispatch** - automated driver assignment
-- **Warehouse sync** - multi-warehouse inventory integration
-- **Complete source code ownership**
-- **3,900+ apps delivered** to clients across 40+ countries
-- **60 days free bug support** included with every purchase
-- Multi-vehicle fleet management
-- Real-time route optimization
-- Proof of delivery system
-
----
+<!-- TODO: fill 3-5 vertical-specific differentiators -->
 
 ## Who Is This For?
 
@@ -111,7 +81,7 @@ Choosing the right technology partner determines whether your launch succeeds or
 
 ---
 
-## Advanced and AI-Powered Features
+## Advanced Features
 
 The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
 
@@ -121,7 +91,7 @@ The platform integrates AI-powered features that reduce manual overhead and capt
 
 ---
 
-## All Modules: Apps and Web Panels
+## Apps and Web Panels
 
 | Module | Description |
 |---|---|
@@ -131,7 +101,19 @@ The platform integrates AI-powered features that reduce manual overhead and capt
 
 ---
 
-## Tech Stack
+## Architecture
+
+```mermaid
+flowchart LR
+    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
+    W[Web Platform<br/>Responsive] --> G
+    P[Partner Panel] --> G
+    AD[Admin Dashboard] --> G
+    G --> DB[(MySQL)]
+    G --> S3[Object Storage]
+```
+
+**Stack:**
 
 | Layer | Technology |
 |---|---|
@@ -158,7 +140,15 @@ The platform is engineered to generate revenue from day one through multiple com
 
 ---
 
-## Pricing and What Is Included
+## Security and Compliance
+
+- OTP-based authentication
+- SSL/TLS encrypted API communication
+- GDPR-ready data handling
+
+---
+
+## What's Included
 
 | Plan | Price | What You Get |
 |---|---|---|
@@ -178,6 +168,8 @@ The platform is engineered to generate revenue from day one through multiple com
 - Free 1-Year Updates
 
 ---
+**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/fedex-clone/#pricing).
+
 
 ## Deployment Timeline
 
@@ -194,15 +186,7 @@ The platform is engineered to generate revenue from day one through multiple com
 
 ---
 
-## Security and Compliance
-
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
-
----
-
-## Build vs Buy Comparison
+## Why Not Build From Scratch?
 
 | Factor | Build from Scratch | Miracuves Solution |
 |---|---|---|
@@ -226,7 +210,7 @@ The platform is engineered to generate revenue from day one through multiple com
 
 ---
 
-## Successful Verticals Built on This Model
+## Successful Verticals
 
 - Courier and parcel delivery
 - Same-day delivery services
@@ -252,7 +236,7 @@ The platform is engineered to generate revenue from day one through multiple com
 
 ---
 
-## Frequently Asked Questions
+## FAQ
 
 **How much?**
 Starts at $2,899.
@@ -268,7 +252,7 @@ Yes. 60 days of free bug support included.
 
 ---
 
-## Related Solutions from Miracuves
+## Related Solutions
 
 Explore our other white-label clone solutions:
 
@@ -276,6 +260,11 @@ Explore our other white-label clone solutions:
 - [DoorDash Clone - Delivery](https://github.com/Miracuves-Solutions/DoorDash-Clone)
 
 ---
+
+## Resources
+
+- [Full Solution Page](https://miracuves.com/fedex-clone/) — features, pricing, demos, FAQ
+
 
 ## Get Started
 
@@ -318,3 +307,22 @@ This product is independently developed by Miracuves. All product names, logos, 
 
 </div>
 
+
+*Keywords: fedex clone, fedex script, white label solution, laravel flutter app, clone script*
+
+
+
+---
+
+### Note on This Repository
+
+This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+
+<!--
+=========================================================
+GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
+Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
+Never use 3 days. See https://miracuves.com/facts/ for audited claims.
+=========================================================
+-->
