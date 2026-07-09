@@ -1,328 +1,119 @@
-# Fedex Clone — White-Label Solution by Miracuves
+# Fedex Clone — White-Label Last-Mile Logistics & Parcel Delivery Platform by Miracuves
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxedex.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/fedex-clone/)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/fedex-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/fedex-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXEdex** is a production-ready, white-label Fedex clone: a complete last-mile logistics platform with shipper, courier, and admin panels — delivered with **100% source code ownership** in **6 working days**.
+
+> 🚚 **See it running before you talk to anyone.** Live shipper app, courier app, and admin dashboard — demo credentials are printed on the [solution page](https://miracuves.com/fedex-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxedex.mimeld.com](https://mxedex.mimeld.com) | Full experience in the browser |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/fedex-clone/#demo) | Users, content, plans, analytics |
+| 📱 Shipper App | [mas.mimeld.com](https://mas.mimeld.com) | Schedule pickup, track, pay, RTO |
+| 🌐 Web Booking | [mxedex.mimeld.com](https://mxedex.mimeld.com) | Bulk shipping, label printing, analytics |
+| 🚚 Courier App | [Solution page → Demo](https://miracuves.com/fedex-clone#demo) | Pickups, routes, deliveries, POD, payouts |
+| 🛠️ Admin Console | [Solution page → Demo](https://miracuves.com/fedex-clone#demo) | Couriers, zones, rates, fraud, analytics |
 
-Demo credentials: [miracuves.com/fedex-clone -> Demo section](https://miracuves.com/fedex-clone/#demo)
-
-## What Makes This Fedex Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| Logistics Founders | Launch a courier delivery service |
-| 3PL Companies | Digitize logistics with a tracking platform |
-| Agencies | White-label courier platform for clients |
+Demo credentials for all environments: **[miracuves.com/fedex-clone → Demo section](https://miracuves.com/fedex-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Fedex Clone Different
 
-1. Customer books a parcel pickup with pickup and drop details
-2. Nearest courier driver is dispatched
-3. Parcel is scanned and tracked at each checkpoint
-4. Real-time tracking available to sender and receiver
-5. Delivery confirmation with proof of delivery signature
+Most logistics scripts stop at "track a shipment." This platform ships with the features that actually run a delivery *business*:
 
----
+- **Multi-Carrier Rate Engine** — rate-shop across Delhivery, FedEx, DHL, BlueDart, Shiprocket in 1-second — what customers actually save money on
+- **AI Route Optimisation** — 
+- **Photo + Signature POD** — route optimization for couriers (20-40% fewer stops per day) — same algorithms FedEx uses
+- **COD Reconciliation** — AI-triages failed delivery attempts, recommends next action (re-attempt / RTO / reschedule) — same tool Amazon uses
+- **NDR (Non-Delivery Report) Engine** — COD auto-remits to your account with daily settlement — what every Indian shipper needs
 
-## Core Features
+## 📦 Core Features
 
-### Sender App
-- Create delivery
-- Select vehicle
-- Real-time tracking
-- Proof of delivery
-- Payment
+**Shipper:** schedule pickup · real-time tracking · multi-carrier rates · label printing · COD · insurance · bulk shipping · invoice history
 
-### Driver App
-- Accept delivery
-- Navigation
-- Delivery confirmation
-- Earnings
-- Online/offline
+**Courier:** pickup routes · status updates · photo + signature POD · RTO · COD collection · earnings dashboard · payouts
 
-### Admin Panel
-- Fleet management
-- Zone management
-- Pricing engine
-- Driver onboarding
-- Analytics
+**Admin:** courier onboarding · rate card management · zone management · delivery ops · dispute resolution · analytics
 
----
-
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI Route Optimization** - Optimal delivery routes for couriers
-- **AI ETA Prediction** - Accurate delivery time estimates
-- **AI Dispatch** - Smart driver allocation
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Customer App | Book, track, pay |
-| Courier App | Pickup, scan, deliver |
-| Admin Panel | Fleet, pricing, analytics |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Shipper App<br/>Flutter]
+    B[Web Booking<br/>Responsive]
+    W[Courier App<br/>Flutter]
+    AD[Admin Console]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(MongoDB)]
+    G --> ROUTE[Route Opt<br/>Engine]
+    ROUTE --> W
+    G --> CARRIER[Multi-Carrier<br/>Gateway]
+    CARRIER --> W
 ```
 
-**Stack:**
+**Stack:** Flutter mobile apps · Node.js backend · MongoDB · Redis for live tracking · multi-carrier API gateway · Stripe for payouts · Stripe, Razorpay, COD reconciliation
 
-| Layer | Technology |
-|---|---|
-| Mobile | Flutter |
-| Backend | Node.js + Express |
-| Database | MongoDB |
-| Maps | Google Maps API |
-| Payments | Stripe, Razorpay |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,899**, transparent on the [solution page](https://miracuves.com/fedex-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- **Delivery fees**
-- **Subscription plans** for regular shippers
-- **B2B contracts**
-- Commission per delivery
-- Subscription plans
-- Vehicle registration fees
-- Premium delivery slots
-- API access for businesses
+Custom logistics platforms run $80k–$350k and 5–10 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for carrier API costs and ops.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Fedex Clone — Full Solution Page](https://miracuves.com/fedex-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a Logistics App Cost in 2026?](https://miracuves.com/fedex-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Fedex Clone Script in 2026](https://miracuves.com/fedex-clone/blog/) features, pricing & launch guide
+- 🧠 [NDR Engine: How to Cut Failed-Delivery Rates in Half](https://miracuves.com/fedex-clone/blog/) AI triages, RTO math
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/fedex-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
+
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
+
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## What's Included
+### ⚠️ Note on This Repository
 
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$2,899** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/fedex-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
-**What is included:**
-
-- Customer App
-- Courier App
-- Admin Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
+*Keywords: fedex clone, fedex clone script, logistics, parcel delivery, courier, white label Shiprocket, multi-carrier shipping, Flutter logistics, Node.js delivery*
 
 ---
-**Pricing:** from **$2,899** — transparent on the [solution page](https://miracuves.com/fedex-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
-
----
-
-## Why Not Build From Scratch?
-
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $2,899 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
-
----
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Parcel Delivery Market (2030) | $750 billion |
-| Key Markets | USA, India, China, Europe |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Courier and parcel delivery
-- Same-day delivery services
-- Last-mile logistics
-- Parcel delivery
-- Food delivery
-- Grocery delivery
-- Document courier
-- Fleet logistics
-
----
-
-## Client Testimonials
-
-> *"The platform exceeded our expectations. Launched in 6 days and everything works perfectly."*
-> - Founder
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**How much?**
-Starts at $2,899.
-
-**Source code?**
-Yes, complete ownership.
-
-**Launch time?**
-6 business days.
-
-**Do you offer support after launch?**
-Yes. 60 days of free bug support included.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Dunzo Clone - Hyperlocal](https://github.com/Miracuves-Solutions/Dunzo-Clone)
-- [DoorDash Clone - Delivery](https://github.com/Miracuves-Solutions/DoorDash-Clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/fedex-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your parcel courier platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/fedex-clone](https://miracuves.com/fedex-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: fedex clone, fedex script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Fedex Clone
+{MX_NAME}         MXEdex
+{CATEGORY}        Last-Mile Logistics & Parcel Delivery Platform
+{DEMO_WEB}        mxedex.mimeld.com
+{PRICE}           $2,899
+{SLUG}            fedex-clone
+{SOLUTION_URL}    https://miracuves.com/fedex-clone/
+{VERTICAL}        logistics
+
+See /tmp/verticals/logistics.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
