@@ -29,10 +29,10 @@ Demo credentials for all environments: **[miracuves.com/fedex-clone → Demo sec
 Most logistics scripts stop at "track a shipment." This platform ships with the features that actually run a delivery *business*:
 
 - **Multi-Carrier Rate Engine** — rate-shop across Delhivery, FedEx, DHL, BlueDart, Shiprocket in 1-second — what customers actually save money on
-- **AI Route Optimisation** — 
-- **Photo + Signature POD** — route optimization for couriers (20-40% fewer stops per day) — same algorithms FedEx uses
-- **COD Reconciliation** — AI-triages failed delivery attempts, recommends next action (re-attempt / RTO / reschedule) — same tool Amazon uses
-- **NDR (Non-Delivery Report) Engine** — COD auto-remits to your account with daily settlement — what every Indian shipper needs
+- **AI Route Optimisation** — route optimization for couriers (20-40% fewer stops per day) — same algorithms FedEx uses
+- **Photo + Signature POD** — requires photo at delivery + signature with timestamp — what makes disputes fall in the courier's favor
+- **COD Reconciliation** — COD auto-remits to your account with daily settlement — what every Indian shipper needs
+- **NDR (Non-Delivery Report) Engine** — AI-triages failed delivery attempts, recommends next action (re-attempt / RTO / reschedule) — same tool Amazon uses
 
 ## 📦 Core Features
 
